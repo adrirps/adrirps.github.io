@@ -5,14 +5,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
+  <title>Adrián Padilla-Segarra - Doctorant</title>
 
   <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
+   
+  <link rel="shortcut icon" href=<ion-icon name="rocket-outline"></ion-icon> type="image/x-icon"> -->
+   <!-- <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🚀</text></svg>"> --> -->
+  
+   <!--
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
@@ -42,17 +44,17 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+          <img src="./assets/images/AdrianPS.jpg" style="border-radius: 20px;" alt="Adrian" width="80">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Adrian Padilla">Adrian Padilla</h1>
+          <h1 class="name" title="Adrian">Adrián<br>Padilla-Segarra</h1>
 
-          <p class="title">Doctorant</p>
+          <p class="title" style="text-align:center">Doctorant à l'ONERA <br>et Université de Toulouse</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+          <span>Contacter</span>
 
           <ion-icon name="chevron-down"></ion-icon>
         </button>
@@ -72,14 +74,16 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Email</p>
+              <p class="contact-title">Adresse mail</p>
 
-              <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
+              <p class="contact-link">adrian [dot]<br> 
+                padilla_segarra [at] <br>
+                 onera.fr</p>
             </div>
 
           </li>
 
-          <li class="contact-item">
+          <!-- <li class="contact-item">
 
             <div class="icon-box">
               <ion-icon name="phone-portrait-outline"></ion-icon>
@@ -91,7 +95,7 @@
               <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
             </div>
 
-          </li>
+          </li> -->
 
           <li class="contact-item">
 
@@ -100,9 +104,9 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Birthday</p>
+              <p class="contact-title">Naissance</p>
 
-              <time datetime="1982-06-23">June 23, 1982</time>
+              <time datetime="1982-06-23">Octobre, 1998</time>
             </div>
 
           </li>
@@ -114,9 +118,9 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Location</p>
+              <p class="contact-title">Localisation</p>
 
-              <address>Sacramento, California, USA</address>
+              <address>Toulouse, France</address>
             </div>
 
           </li>
@@ -127,23 +131,41 @@
 
         <ul class="social-list">
 
+          
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+            <a href="https://scholar.google.com/citations?user=TnZMs6UAAAAJ&hl=en&oi=ao" class="social-link">
+              <img src="./assets/images/scholar.png" height="17">
             </a>
           </li>
 
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
+            <a href="https://www.researchgate.net/profile/Adrian-Padilla-Segarra-2" class="social-link">
+              <img src="./assets/images/researchgate.png" height="17">
             </a>
           </li>
 
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
+            <a href="https://orcid.org/0000-0003-0874-3602" class="social-link">
+              <img src="./assets/images/orcid.png" height="17">
             </a>
           </li>
+
+
+          <li class="social-item">
+            <a href="http://github.com/adrirps" class="social-link">
+              <img src="./assets/images/github.png" height="21">
+            </a>
+          </li>
+
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/adrirps" class="social-link">
+              <img src="./assets/images/linkedin.png" height="17">
+            </a>
+          </li>
+
+
+
 
         </ul>
 
@@ -170,24 +192,23 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link  active" data-nav-link>Résumé</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link>Curriculum</button>
           </li>
 
+          
+<!-- 
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
+          </li> -->
 
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
+          
 
         </ul>
 
@@ -201,25 +222,28 @@
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+      <article class="about  active" data-page="résumé">
 
         <header>
-          <h2 class="h2 article-title">About me</h2>
+          <h2 class="h2 article-title">Sur moi</h2>
         </header>
 
         <section class="about-text">
           <p>
-            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
-          </p>
-
+            Je suis Adrián, actuellement doctorant en première année à <strong>l'ONERA</strong> et à <strong>l'Université de Toulouse (INSA)</strong> en France sous
+            la direction de
+            <strong><a href="https://www.math.univ-toulouse.fr/~pnoble/" style="display:inline">Pascal Noble</a></strong> 
+            et <strong><a href="https://www.researchgate.net/profile/Eric-Savin" style="display:inline">Éric Savin</a></strong>.
+          </p>   
+             
           <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created web design for many famous brand companies.
+          Je m'intéresse aux mathématiques appliquées, notamment aux <strong>EDP</strong>, à la <strong>régression par processus gaussiens</strong> 
+            et à la modélisation en utilisant des outils d'apprentissage automatique pour l'étude des équations différentielles.
+          </p>
+          
+          <p>
+            Je suis titulaire d'un Master en Mathématiques et Applications (finalité Analyse, Modélisation, Simulation), de l'Université Paris-Saclay en France,
+            et d'une Bachelor of Science en Mathématiques de Yachay Tech en Équateur (avec un parcours de formation interdisciplinaire en sciences et ingénierie)
           </p>
         </section>
 
@@ -230,44 +254,48 @@
 
         <section class="service">
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+          <h3 class="h3 service-title">Mes Intérêts</h3>
 
           <ul class="service-list">
 
+            <a>
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
+                <img src="./assets/images/aerodynamics.png" height="55" >
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
+                <h4 class="h4 service-item-title">Équations Différentielles</h4>
 
                 <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
+                  Modélisation et simulation d'un point de vue d'analyse fonctionelle et numérique
                 </p>
               </div>
 
             </li>
+          </a>
 
+          <a>
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+                <img src="./assets/images/regression.png" height="52" >
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
+                <h4 class="h4 service-item-title">Processus Gaussiens</h4>
 
                 <p class="service-item-text">
-                  High-quality development of sites at the professional level.
+                  Régression par processus gaussiens et applications
+                  comme outils d'apprentissage à partir des données
                 </p>
               </div>
 
             </li>
+          </a>
 
-            <li class="service-item">
+            <!-- <li class="service-item">
 
               <div class="service-icon-box">
                 <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
@@ -281,8 +309,9 @@
                 </p>
               </div>
 
-            </li>
-
+            </li> 
+            
+            
             <li class="service-item">
 
               <div class="service-icon-box">
@@ -297,18 +326,20 @@
                 </p>
               </div>
 
-            </li>
+            </li> -->
 
           </ul>
 
         </section>
+
+        
 
 
         <!--
           - testimonials
         -->
 
-        <section class="testimonials">
+        <!-- <section class="testimonials">
 
           <h3 class="h3 testimonials-title">Testimonials</h3>
 
@@ -404,7 +435,7 @@
 
           </ul>
 
-        </section>
+        </section> -->
 
 
         <!--
@@ -423,7 +454,7 @@
 
             <div class="modal-img-wrapper">
               <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+                <img src="./assets/images/AdrianPS.jpg" alt="Adrian" width="80" data-modal-img>
               </figure>
 
               <img src="./assets/images/icon-quote.svg" alt="quote icon">
@@ -456,7 +487,7 @@
           - clients
         -->
 
-        <section class="clients">
+        <!-- <section class="clients">
 
           <h3 class="h3 clients-title">Clients</h3>
 
@@ -500,7 +531,7 @@
 
           </ul>
 
-        </section>
+        </section> -->
 
       </article>
 
@@ -512,61 +543,84 @@
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+      <article class="resume" data-page="curriculum">
 
         <header>
-          <h2 class="h2 article-title">Resume</h2>
+          <h2 class="h2 article-title">Curriculum</h2>
         </header>
 
         <section class="timeline">
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="school"></ion-icon>
             </div>
 
-            <h3 class="h3">Education</h3>
+            <h3 class="h3"><a>Formation Initiale</a></h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">University school of the arts</h4>
-
-              <span>2007 — 2008</span>
-
+              <h4 class="h4 timeline-item-title"> Université de Toulouse - INSA 
+                <img src="./assets/images/imt.png" alt="IMT" style="display:inline; float:inline-end" height="40">
+                <p style="float: inline-end;">&nbsp&nbsp&nbsp&nbsp</p>
+                <img src="./assets/images/insa-toulouse.png" alt="INSA Toulouse" style="display:inline; float:inline-end" height="29">
+                <p style="float: inline-end;">&nbsp&nbsp&nbsp&nbsp</p>
+                <img src="./assets/images/univ-toulouse.png" alt="Universite de Toulouse" style="display:inline; float:inline-end" height="35">
+                
+              </h4>
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                <strong>Thèse Doctorale</strong> en Mathématiques Appliquées
               </p>
+
+              <span>Novembre 2023 — Présent</span>
+
+                <p class="timeline-text">
+              Sujet: <i>Résolution d'EDP par régression par processus gaussiens informés par la physique </i><br> 
+              Dirigée par <a href="https://www.math.univ-toulouse.fr/~pnoble/" style="display:inline">Pascal Noble</a> 
+              et <a href="https://www.researchgate.net/profile/Eric-Savin" style="display:inline">Éric Savin</a> dans le cadre de 
+              l'Institute de Mathématiques de Toulouse (<a href="https://www.math.univ-toulouse.fr/fr/"  style="display:inline">IMT</a>)
+              et l'<a href="https://onera.fr/"  style="display:inline">ONERA - The French Aerospace Lab</a>
+            </p>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"> Université Paris-Saclay 
+                <img src="./assets/images/paris-saclay.png" alt="Universite Paris Saclay" style="display:inline; float:inline-end" height="40">
+              </h4>
+              <p class="timeline-text">
+                <strong>Master</strong> en Mathématiques et Applications
+              </p>
+
+              <span>Août 2021 — Septembre 2023</span>
+
+              <ul>
+               <li> <p class="timeline-text">
+                &nbsp&nbsp M2 Analyse, Modélisation, Simulation (mention <i>Bien</i>)
+              </p> </li>
+              <li><p class="timeline-text">
+                &nbsp&nbsp M1 Mathématiques et Interactions (mention <i>Très Bien</i>)
+              </p></li>
+              </ul>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">New york academy of art</h4>
-
-              <span>2006 — 2007</span>
-
+              <h4 class="h4 timeline-item-title">  Universidad Yachay Tech 
+                <img src="./assets/images/yachaytech.png" alt="Yachay Tech" style="display:inline; float:inline-end" height="40">
+              </h4> 
               <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
+                <strong>Bachelor of Science</strong> en Mathématiques
               </p>
 
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
-
-              <span>2002 — 2004</span>
-
+              <span> Janvier 2017 — Août 2021</span>
+              
               <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
+                Mention <i>Magna Cum Laude</i>
               </p>
 
             </li>
@@ -579,52 +633,105 @@
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="briefcase"></ion-icon>
             </div>
 
-            <h3 class="h3">Experience</h3>
+            <h3 class="h3"><a>Expérience</a></h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Creative director</h4>
-
-              <span>2015 — Present</span>
+              <h4 class="h4 timeline-item-title">  ONERA - The French Aerospace Lab
+                <img src="./assets/images/onera.png" alt="ONERA" style="display:inline; float:inline-end" height="43">
+              </h4> 
+              <p class="timeline-text">
+                Chercheur - Doctorant
+              </p>
+              <span>Novembre 2023 - Présent</span>
 
               <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
+                Poste de recherche pendant 36 mois comme financement de thése doctorale, 
+                affecté au Centre de Toulouse - DTIS dans l'unité de Mathématiques Appliquées et Calcul Intensif
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Art director</h4>
+              <h4 class="h4 timeline-item-title">  Inria Saclay - Équipe MΞDISIM
+                <img src="./assets/images/m3disim.png" alt="Inria" style="display:inline; float:inline-end" height="65">
+              </h4> 
+              <p class="timeline-text">
+                Stagiaire de Recherche
+              </p>
 
-              <span>2013 — 2015</span>
+
+              <span>Avril — Août 2023</span>
 
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                Sujet : <i>Data-based modeling of pharmacological effects in a biomechanical model of the cardiovascular system:
+                application in critical care monitoring.</i> <br>
+                Encadré par <a href="https://m3disim.saclay.inria.fr/people/dominique-chapelle/" style="display:inline">Dominique Chapelle</a>
+                et <a href="https://m3disim.saclay.inria.fr/people/francois-kimmig/" style="display:inline">François Kimmig</a>
+                dans le cadre du Projet 
+                <a href="https://www.inria.fr/en/anaestassist-heart-digital-twin-tools-anaesthetists" style="display:inline">AnaestAssist</a>,
+                 en collaboration avec l’Hôpital Lariboisière à Paris et Politecnico di Milano
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Web designer</h4>
+              <h4 class="h4 timeline-item-title">  Laboratoire de Mathématiques et Modélisation d'Évry
+                <img src="./assets/images/lamme.jpeg" alt="LaMME" style="display:inline; float:inline-end" height="70">
+              </h4> 
+              <p class="timeline-text">
+                Stagiaire de Recherche
+              </p>
 
-              <span>2010 — 2013</span>
+              <span>Avril — Juillet 2022</span>
 
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                Sujet : <i>
+                  Quelques caractérisations équivalentes des espaces de Hardy
+                </i><br>
+                Encadré par <a href="https://www.math-evry.cnrs.fr/members/dchamorro/welcome" style="display:inline">Diego Chamorro</a>,
+                 dans le domaine d'analyse harmonique
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">  School of Mathematical and Computational Sciences - Yachay Tech
+                <img src="./assets/images/yachaytech_ECMC.png" alt="ECMC" style="display:inline; float:inline-end" height="60">
+              </h4> 
+
+              <p class="timeline-text">
+                Assistant de Recherche
+              </p>
+              <span>Août - Octobre 2020</span>
+              
+              <p class="timeline-text">
+                Sujet : <i>
+                  Existence of Solutions, Approximate and Exact Controllability of Non-Autonomous Semilinear Differential Equations with Non-Instantaneous Impulses, Delay and Non-local Conditions
+                </i><br>
+                Encadré par <a href="https://www.yachaytech.edu.ec/en/perfil/hugo-leiva-ph-d/" style="display:inline">Hugo Leiva</a>,
+                dans le domaine de théorie du contrôle
+              </p>
+              <br>
+              
+              <p class="timeline-text">
+                Assistant de Enseignement
+              </p>
+              
+              <span>Novembre 2020 — Janvier 2021</span>
+
+              <p class="timeline-text">
+                Dans le cours de Méthodes Numériques (S4) encadré par
+                <a href="https://www.yachaytech.edu.ec/en/perfil/franklin-camacho-ph-d/" style="display:inline">Franklin Camacho</a>
               </p>
 
             </li>
@@ -633,67 +740,67 @@
 
         </section>
 
-        <section class="skill">
 
-          <h3 class="h3 skills-title">My skills</h3>
+        <!-- 
+          langues
+        -->
+        
+        <section class="blog-posts">
 
-          <ul class="skills-list content-card">
+          <ul class="blog-posts-list">
 
-            <li class="skills-item">
+            <li class="blog-post-item">
+              <a>
+                <div class="blog-content">
 
-              <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
-              </div>
+                  <h3 class="h3 blog-item-title">
+                    <ion-icon name="language" ></ion-icon> 
+                    <p  style="display:inline" >Langues</p>
+                  </h3>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
+                  <p class="blog-text">
+                    Espagnol - Français - Anglais
+                  </p>
 
+                </div>
+
+              </a>
             </li>
+            
+            <li class="blog-post-item">
+              <a>
+                <div class="blog-content">
 
-            <li class="skills-item">
+                  <h3 class="h3 blog-item-title">
+                    <ion-icon name="code" ></ion-icon> 
+                    <p  style="display:inline" >Programmation</p>
+                  </h3>
 
-              <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
-              </div>
+                  <p class="blog-text">
+                    MATLAB - C++ - R - Python - HTML -
+                    <span style="display: inline; font-family: serif; margin-right: -.7em;">
+                      L<span style="display:inline; font-size: 0.9em; position: relative; top: -.1em; left: -0.4em;">A</span>
+                      <span style="display:inline; position: relative; left: -.7em;">T</span>
+                      <span style="display:inline; position: relative; top: .2em; left: -1em;">E</span>
+                      <span style="display:inline; position: relative; left: -1.4em;">X</span>
+                    </span> 
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
+                    
+                    
+                  </p>
 
+                </div>
+
+              </a>
             </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
+        
 
           </ul>
 
-        </section>
+        </section> 
+
+  
+
 
       </article>
 
@@ -939,200 +1046,6 @@
 
 
 
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
       <!--
         - #CONTACT
       -->
@@ -1145,13 +1058,39 @@
 
         <section class="mapbox" data-mapbox>
           <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5033.029500066695!2d1.4688043452031632!3d43.570799897936936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sfr!4v1699573966430!5m2!1sen!2sfr"
+             width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </figure>
         </section>
 
-        <section class="contact-form">
+
+        <section class="service">
+
+          
+            
+            <li class="service-item">
+
+              <div class="service-content-box">
+               
+                
+              <centre>
+                <p style="float: inline-end;" ;" lass="service-item-text">
+                  
+                  <strong>Bureau académique 120</strong><br>
+                  INSA Toulouse - Département de Génie Mathématique et Modélisation <br>
+                  135 avenue de Rangueil <br>
+                  31077 Toulouse CEDEX 4 <br>
+                  France
+                </p>
+              </centre>
+              </div>
+
+            </li>
+          
+
+          </section>
+
+        <!-- <section class="contact-form">
 
           <h3 class="h3 form-title">Contact Form</h3>
 
@@ -1172,7 +1111,7 @@
 
           </form>
 
-        </section>
+        </section> -->
 
       </article>
 
