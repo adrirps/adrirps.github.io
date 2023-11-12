@@ -162,6 +162,12 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  /* webkit-ba /background-size: cover; */
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:100%;
+  width:100%; 
  }
 
 
@@ -1868,7 +1874,8 @@ textarea.form-input::-webkit-resizer { display: none; }
     text-align: center;
   }
 
-  .info-content .title { margin: auto; }
+  .info-content .title { margin: auto;
+    width: 180px; }
 
   .info_more-btn { display: none; }
 
