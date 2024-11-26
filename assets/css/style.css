@@ -64,7 +64,8 @@
   --smoky-black: hsl(106, 75%, 87%); /* background bottom */
   --white-1: hsl(0, 0%, 100%); /* letters role */
   --white-2: hsl(146, 100%, 3%); /* letters name and headers */
-  --orange-yellow-crayola: hsl(176, 100%, 68%); /* menu option*/
+  --orange-yellow-crayola: hsl(176, 100%, 68%); /* menu option (antiguo) y otros links*/
+  --dorado-activo: hsl(40, 87%, 50%); /* menu option*/
   --vegas-gold: hsl(35, 96%, 46%); /* dates */
   --light-gray: hsl(0, 0%, 12%); /* general text*/
   --light-gray-70: hsla(0, 0%, 0%, 0.606); /* little headers */
@@ -497,16 +498,16 @@ main {
 }
 
 .navbar-link {
-  color: var(--light-gray);
+  color: var(--orange-yellow-crayola);
   font-size: var(--fs-8);
   padding: 20px 7px;
   transition: color var(--transition-1);
 }
 
-.navbar-link:hover{ color: var(--orange-yellow-crayola); }
+.navbar-link:hover{ color: var(--dorado-activo); }
 .navbar-link:focus { color: var(--light-gray-70); }
 
-.navbar-link.active { color: var(--orange-yellow-crayola); }
+.navbar-link.active { color: var(--dorado-activo); }
 
 
 
@@ -1659,7 +1660,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .filter-item button {
-    color: var(--light-gray);
+    color: var(--orange-yellow-crayola);
     font-size: var(--fs-5);
     transition: var(--transition-1);
     background:  hsla(240, 57%, 21%, 0.75);
@@ -1667,9 +1668,9 @@ textarea.form-input::-webkit-resizer { display: none; }
     border-radius: 8px;
   }
 
-  .filter-item button:hover { color: var(--orange-yellow-crayola); }
+  .filter-item button:hover { color: var(--dorado-activo); }
 
-  .filter-item button.active { color: var(--orange-yellow-crayola); }
+  .filter-item button.active { color: var(--dorado-activo); }
 
 
   /* portfolio and blog grid */
